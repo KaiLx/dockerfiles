@@ -1,0 +1,4 @@
+dn: dc=test1,dc=example,dc=com
+dc: test1
+objectClass: top
+objectClass: domain

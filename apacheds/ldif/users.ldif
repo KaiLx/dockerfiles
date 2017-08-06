@@ -1,0 +1,39 @@
+# user, groups, test1.example.com
+dn: cn=user,ou=groups,dc=test1,dc=example,dc=com
+cn: user
+objectClass: top
+objectClass: posixGroup
+gidNumber: 300
+
+# admin, groups, test1.example.com
+dn: cn=admin,ou=groups,dc=test1,dc=example,dc=com
+cn: admin
+objectClass: top
+objectClass: posixGroup
+memberUid: sora
+gidNumber: 600
+
+# sora, people, test1.example.com
+dn: uid=sora,ou=people,dc=test1,dc=example,dc=com
+cn: admin
+objectClass: posixAccount
+objectClass: top
+objectClass: account
+homeDirectory: /home/sora
+gidNumber: 600
+uidNumber: 100
+userPassword:: e01ENX10NHUxZ2xJNmlkb0h6alNPdGVGdGlBPT0=
+userPassword:: e01ENX1BakNWWlVkMWlxZ2ZwWlhkbU9YSCtRPT0=
+uid: sora
+
+# people, test1.example.com
+dn: ou=people,dc=test1,dc=example,dc=com
+ou: people
+objectClass: top
+objectClass: organizationalUnit
+
+# groups, test1.example.com
+dn: ou=groups,dc=test1,dc=example,dc=com
+ou: groups
+objectClass: top
+objectClass: organizationalUnit

@@ -1,0 +1,8 @@
+dn: cn=nis,ou=schema
+cn: nis
+objectclass: metaSchema
+objectclass: top
+m-dependencies: system
+m-dependencies: core
+m-dependencies: cosine
+m-disabled: FALSE
